@@ -9,6 +9,9 @@ cache:
     - combined/target/
     - docker-img/web/ 
 
+services:
+  - docker:dind
+
 stages:
   - build
   - test
